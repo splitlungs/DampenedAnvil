@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeBuild", "CakeBuild\CakeBuild.csproj", "{76E5941A-9966-4686-B4B0-49827D8EE4C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DampenedAnvil", "DampenedAnvil\DampenedAnvil.csproj", "{F91BF01C-617F-4C13-BC0B-92C6A7A9856A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76E5941A-9966-4686-B4B0-49827D8EE4C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76E5941A-9966-4686-B4B0-49827D8EE4C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76E5941A-9966-4686-B4B0-49827D8EE4C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76E5941A-9966-4686-B4B0-49827D8EE4C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F91BF01C-617F-4C13-BC0B-92C6A7A9856A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F91BF01C-617F-4C13-BC0B-92C6A7A9856A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F91BF01C-617F-4C13-BC0B-92C6A7A9856A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F91BF01C-617F-4C13-BC0B-92C6A7A9856A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14D9FCB7-FAD4-4ECF-ADFE-7D4F66D093AF}
+	EndGlobalSection
+EndGlobal

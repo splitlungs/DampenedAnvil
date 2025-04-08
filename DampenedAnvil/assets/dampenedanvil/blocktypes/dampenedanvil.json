@@ -1,0 +1,173 @@
+// {
+// 	"code": "dampenedanvil",
+// 	"class": "DampenedAnvilBlock",
+// 	"entityClass": "DampenedAnvilBE",
+// 	"behaviors": [
+// 		{
+// 			"name": "Lockable"
+// 		},
+// 		{
+// 			"name": "UnstableFalling",
+// 			"impactDamageMul": 20
+// 		}
+// 	],
+// 	"entityBehaviors": [
+// 		{
+// 			"name": "TemperatureSensitive"
+// 		}
+// 	],
+// 	"attributes": {
+// 		"reinforcable": true
+// 	},
+// 	"enabled": true,
+// 	"heldTpIdleAnimation": "holdbothhands",
+// 	"variantgroups": [
+// 		{
+// 			"code": "metal",
+// 			"states": [
+// 				"copper",
+// 				"tinbronze",
+// 				"bismuthbronze",
+// 				"blackbronze",
+// 				"iron",
+// 				"meteoriciron",
+// 				"steel"
+// 			]
+// 		},
+// 		{
+// 			"code": "wood",
+// 			"states": [
+// 				"acacia",
+// 				"aged",
+// 				"baldcypress",
+// 				"birch",
+// 				"ebony",
+// 				"kapok",
+// 				"larch",
+// 				"maple",
+// 				"oak",
+// 				"pine",
+// 				"purpleheart",
+// 				"redwood",
+// 				"walnut"
+// 			]
+// 		}
+// 	],
+// 	"shapeByType": {
+// 		"@dampenedanvil-(iron|meteoriciron|steel)": {
+// 			"base": "dampenedanvil:block/dampenedanvil-iron"
+// 		},
+// 		"*": {
+// 			"base": "dampenedanvil:block/dampenedanvil"
+// 		}
+// 	},
+// 	"creativeinventory": {
+// 		"general": [
+// 			"*"
+// 		],
+// 		"decorative": [
+// 			"*"
+// 		]
+// 	},
+// 	"blockmaterial": "Metal",
+// 	"replaceable": 100,
+// 	"resistance": 2,
+// 	"lightAbsorption": 0,
+// 	"maxStackSize": 1,
+// 	"textures": {
+// 		"nail": {
+// 			"base": "game:block/metal/anvil/{metal}"
+// 		},
+// 		"metal": {
+// 			"base": "game:block/metal/anvil/{metal}"
+// 		},
+// 		"ironbloom": {
+// 			"base": "game:item/resource/ironbloom"
+// 		},
+// 		"blistersteel": {
+// 			"base": "game:block/metal/ingot/blistersteel"
+// 		},
+// 		"rusty-iron": { "base": "game:block/metal/tarnished/rusty-iron" },
+// 		"bark": { "base": "game:block/wood/bark/{wood}" },
+// 		"trunk": { "base": "game:block/wood/treetrunk/{wood}" }
+// 	},
+// 	"sidesolid": {
+// 		"all": false
+// 	},
+// 	"sideopaque": {
+// 		"all": false
+// 	},
+// 	"__comment": "defined for both angles",
+// 	"collisionSelectionBoxesByType": {
+// 		"*": [
+// 			{
+// 				"x1": 0,
+// 				"y1": 0,
+// 				"z1": 0.05,
+// 				"x2": 1,
+// 				"y2": 1,
+// 				"z2": 0.95
+// 			},
+// 			{
+// 				"x1": 0.05,
+// 				"y1": 0,
+// 				"z1": 0,
+// 				"x2": 0.95,
+// 				"y2": 1,
+// 				"z2": 1
+// 			}
+// 		]
+// 	},
+// 	"sounds": {
+// 		"place": "game:block/anvil",
+// 		"break": "game:block/anvil",
+// 		"hit": "game:block/anvil",
+// 		"walk": "game:walk/stone*"
+// 	},
+// 	"tpHandTransform": {
+// 		"translation": {
+// 			"x": -0.8,
+// 			"y": -0.55,
+// 			"z": -0.35
+// 		},
+// 		"rotation": {
+// 			"x": -51,
+// 			"y": 11,
+// 			"z": -106
+// 		},
+// 		"scale": 0.8
+// 	},
+// 	"guiTransform": {
+// 		"rotation": {
+// 			"x": -20,
+// 			"y": -41,
+// 			"z": 0
+// 		},
+// 		"origin": {
+// 			"x": 0.46,
+// 			"y": 0.34,
+// 			"z": 0.5
+// 		},
+// 		"scale": 1.48
+// 	},
+// 	"groundTransform": {
+// 		"origin": {
+// 			"x": 0.5,
+// 			"y": 0,
+// 			"z": 0.5
+// 		},
+// 		"scale": 1
+// 	},
+// 	"fpHandTransform": {
+// 		"rotation": {
+// 			"x": 12,
+// 			"y": -22,
+// 			"z": 0
+// 		},
+// 		"origin": {
+// 			"x": 0.5,
+// 			"y": 0.3,
+// 			"z": 0.5
+// 		}
+// 	}
+// }

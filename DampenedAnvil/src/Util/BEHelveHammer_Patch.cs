@@ -20,16 +20,16 @@ namespace DampenedAnvil
             ref BEBehaviorMPToggle ___mptoggle, ref BlockEntityAnvil ___targetAnvil, ref bool ___obstructed, ref bool ___didHit, 
             ref double ___angleBefore, ref double ___ellapsedInameSecGrow, ref float ___rnd, ref float ___vibrate)
         {
-            __instance.Api.Logger.Event("[DampenedAnvil] Attempting to run Prefix.");
-            if (__instance.Api.Side != EnumAppSide.Client || ___targetAnvil == null)
+            // __instance.Api.Logger.Event("[DampenedAnvil] Attempting to run Prefix.");
+            if (___targetAnvil == null)
                 return true;
-            __instance.Api.Logger.Event("[DampenedAnvil] Attempting to get Log.");
+            // __instance.Api.Logger.Event("[DampenedAnvil] Attempting to get Log.");
             string block = __instance.Api.World.BlockAccessor.GetBlockBelow(___targetAnvil.Pos).Code;
-            __instance.Api.Logger.Event("[DampenedAnvil] Found block {0}.", block);
+            // __instance.Api.Logger.Event("[DampenedAnvil] Found block {0}.", block);
             if (!block.Contains("log"))
                 return true;
 
-            __instance.Api.Logger.Event("[DampenedAnvil] Found a Log!");
+            // __instance.Api.Logger.Event("[DampenedAnvil] Found a Log!");
 
             if (___mptoggle == null)
             {
@@ -70,8 +70,8 @@ namespace DampenedAnvil
                 ___vibrate = 0.02f;
                 if (__instance.Api.Side == EnumAppSide.Client && ___targetAnvil != null)
                 {
-                    float hitDist = DampenedAnvilSystem.Config.HelveHitDistance;
-                    float hitVol = DampenedAnvilSystem.Config.HelveHitVolume;
+                    float hitDist = DampenedAnvilConfigSystem.ClientConfig.HelveHitDistance;
+                    float hitVol = DampenedAnvilConfigSystem.ClientConfig.HelveHitVolume;
                     __instance.Api.World.PlaySoundAt(new AssetLocation("sounds/effect/anvilhit"), (float)(__instance.Pos.X + __instance.facing.Normali.X * 3) + 0.5f, (float)__instance.Pos.Y + 0.5f, (float)(__instance.   Pos.Z + __instance.facing.Normali.Z * 3) + 0.5f, null, 0.3f + (float)__instance.Api.World.Rand.NextDouble() * 0.2f, hitDist, hitVol);
                     ___targetAnvil.OnHelveHammerHit();
                 }

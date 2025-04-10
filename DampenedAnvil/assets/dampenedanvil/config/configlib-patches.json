@@ -1,0 +1,59 @@
+{
+  "version": 0,
+  "file": "DampenedAnvil_Config.json",
+  "patches": {},
+  "settings": [
+    {
+      "type": "separator",
+      "title": "DampenedAnvilSettings"
+    },
+    {
+      "code": "HammerHitDistance",
+      "comment": "HammerHitDistanceComment",
+      "type": "integer",
+      "clientSide": true,
+      "default": 8.0,
+      "range": {
+        "min": 0,
+        "max": 128,
+        "step": 1
+      }
+    },
+    {
+      "code": "HammerHitVolume",
+      "comment": "HammerHitVolumeComment",
+      "type": "float",
+      "clientSide": true,
+      "default": 0.5,
+      "range": {
+        "min": 0.0,
+        "max": 1.0,
+        "step": 0.01
+      }
+    },
+    {
+      "code": "HelveHitDistance",
+      "comment": "HelveHitDistanceComment",
+      "type": "integer",
+      "clientSide": true,
+      "default": 16.0,
+      "range": {
+        "min": 0,
+        "max": 128,
+        "step": 1
+      }
+    },
+    {
+      "code": "HelveHitVolume",
+      "comment": "HelveHitVolumeComment",
+      "type": "float",
+      "clientSide": true,
+      "default": 0.5,
+      "range": {
+        "min": 0.0,
+        "max": 1.0,
+        "step": 0.01
+      }
+    }
+  ]
+}

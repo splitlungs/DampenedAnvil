@@ -46,6 +46,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>
   <None Remove="assets\dampenedanvil\blocktypes\dampenedanvil.json" />
+  <None Remove="assets\dampenedanvil\config\configlib-patches.json" />
   <None Remove="assets\dampenedanvil\shapes\anvil-dampened-test.json" />
   <None Remove="assets\dampenedanvil\shapes\block\dampenedanvil-iron.json" />
   <None Remove="assets\dampenedanvil\shapes\dampenedanvil.json" />

@@ -17,10 +17,10 @@ namespace DampenedAnvil
         [HarmonyPatch(typeof(ItemHammer), "strikeAnvilSound")]
         public static bool Prefix(ItemHammer __instance, EntityAgent byEntity, bool merge)
         {
-            byEntity.Api.Logger.Event("[DampenedAnvil] Attempting to run Prefix.");
+            // byEntity.Api.Logger.Event("[DampenedAnvil] Attempting to run Prefix.");
             if (byEntity.Api.Side != EnumAppSide.Client)
                 return true;
-            byEntity.Api.Logger.Event("[DampenedAnvil] Attempting to get Log.");
+            // byEntity.Api.Logger.Event("[DampenedAnvil] Attempting to get Log.");
             
             IPlayer player = (byEntity as EntityPlayer).Player;
             BlockSelection currentBlockSelection = player.CurrentBlockSelection;
@@ -29,17 +29,17 @@ namespace DampenedAnvil
                 return true;
             }
             string block = byEntity.Api.World.BlockAccessor.GetBlockBelow(currentBlockSelection.Position).Code;
-            byEntity.Api.Logger.Event("[DampenedAnvil] Found block {0}.", block);
+            // byEntity.Api.Logger.Event("[DampenedAnvil] Found block {0}.", block);
             if (!block.Contains("log"))
                 return true;
 
-            byEntity.Api.Logger.Event("[DampenedAnvil] Found a Log!");
+            // byEntity.Api.Logger.Event("[DampenedAnvil] Found a Log!");
 
             
             if (player != null && player.CurrentBlockSelection != null)
             {
-                float hitDist = DampenedAnvilSystem.Config.HammerHitDistance;
-                float hitVol = DampenedAnvilSystem.Config.HammerHitVolume;
+                float hitDist = DampenedAnvilConfigSystem.ClientConfig.HammerHitDistance;
+                float hitVol = DampenedAnvilConfigSystem.ClientConfig.HammerHitVolume;
                 player.Entity.World.PlaySoundAt(merge ? new AssetLocation("sounds/effect/anvilmergehit") : new AssetLocation("sounds/effect/anvilhit"), player.Entity, player, 0.9f + (float)byEntity.World.Rand.NextDouble() * 0.2f, hitDist, hitVol);
             }
             return false;

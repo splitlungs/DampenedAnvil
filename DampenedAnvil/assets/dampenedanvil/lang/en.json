@@ -1,3 +1,11 @@
 {
-    
+  "DampenedAnvilSettings": "Dampened Anvil Settings",
+  "HammerHitDistance": "Hammer Hit Distance",
+  "HammerHitDistanceComment": "The distance in blocks that sound will travel. Vanilla default is 16.0",
+  "HammerHitVolume": "Hammer Hit Volume",
+  "HammerHitVolumeComment": "Maximum volume when the hammer strikes an anvil. Vanilla default is 1.0",
+  "HelveHitDistance": "Helve Hammer Hit Distance",
+  "HelveHitDistanceComment": "The distance in blocks that sound will travel. Vanilla default is 32.0",
+  "HelveHitVolume": "Helve Hammer Hit Volume",
+  "HelveHitVolumeComment": "Maximum volume when the hammer strikes an anvil. Vanilla default is 1.0"
 }

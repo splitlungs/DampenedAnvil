@@ -6,7 +6,7 @@
         "BloodThunder"
     ],
     "description": "Mind your neighbors. Dampen your anvil.",
-    "version": "0.0.8",
+    "version": "1.0.0",
     "dependencies": {
         "game": ""
     }

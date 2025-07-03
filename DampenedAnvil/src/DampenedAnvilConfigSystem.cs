@@ -11,7 +11,7 @@ namespace DampenedAnvil
 {
     public class DampenedAnvilConfigSystem : ModSystem
     {
-        private const double ConfigVersion = 0.01d;
+        private const double ConfigVersion = 1.00d;
         public const string ConfigFile = "DampenedAnvil_Config.json";
         public static DampenedAnvilConfig ClientConfig { get; set; } = null!;
         public static DampenedAnvilConfig ServerConfig { get; set; } = null!;
@@ -57,6 +57,8 @@ namespace DampenedAnvil
                     if (config.HammerHitVolume != 0.5f) tempConfig.HammerHitVolume = config.HammerHitVolume;
                     if (config.HelveHitDistance != 16f) tempConfig.HelveHitDistance = config.HelveHitDistance;
                     if (config.HelveHitVolume != 0.5f) tempConfig.HelveHitVolume = config.HelveHitVolume;
+                    if (config.PulverizerHitDistance != 4f) tempConfig.PulverizerHitDistance = config.PulverizerHitDistance;
+                    if (config.PulverizerHitVolume != 0.5f) tempConfig.PulverizerHitVolume = config.PulverizerHitVolume;
 
                     tempConfig.Version = ConfigVersion;
                     config = tempConfig;

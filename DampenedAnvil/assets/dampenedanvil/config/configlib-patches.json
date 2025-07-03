@@ -54,6 +54,30 @@
         "max": 1.0,
         "step": 0.01
       }
+    },
+    {
+      "code": "PulverizerHitDistance",
+      "comment": "PulverizerHitDistanceComment",
+      "type": "integer",
+      "clientSide": true,
+      "default": 4.0,
+      "range": {
+        "min": 0,
+        "max": 128,
+        "step": 1
+      }
+    },
+    {
+      "code": "PulverizerHitVolume",
+      "comment": "PulverizerHitVolumeComment",
+      "type": "float",
+      "clientSide": true,
+      "default": 0.5,
+      "range": {
+        "min": 0.0,
+        "max": 1.0,
+        "step": 0.01
+      }
     }
   ]
 }

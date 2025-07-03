@@ -12,6 +12,8 @@ namespace DampenedAnvil
         public float HammerHitVolume = 0.5f;
         public float HelveHitDistance = 16f;
         public float HelveHitVolume = 0.5f;
+        public float PulverizerHitDistance = 4f;
+        public float PulverizerHitVolume = 0.5f;
         public double Version;
     }
 }

@@ -7,5 +7,9 @@
   "HelveHitDistance": "Helve Hammer Hit Distance",
   "HelveHitDistanceComment": "The distance in blocks that sound will travel. Vanilla default is 32.0",
   "HelveHitVolume": "Helve Hammer Hit Volume",
-  "HelveHitVolumeComment": "Maximum volume when the hammer strikes an anvil. Vanilla default is 1.0"
+  "HelveHitVolumeComment": "Maximum volume when the hammer strikes an anvil. Vanilla default is 1.0",
+  "PulverizerHitDistance": "Pulverizer Hit Distance",
+  "PulverizerHitDistanceComment": "The distance in blocks that sound will travel. Vanilla default is 8.0",
+  "PulverizerHitVolume": "Pulverizer Hit Volume",
+  "PulverizerHitVolumeComment": "Maximum volume when the pulverizer is active. Vanilla default is 1.0"
 }
